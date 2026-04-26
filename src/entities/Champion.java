@@ -46,7 +46,7 @@ public class Champion {
 		this.armor = armor;
 	}
 	
-	public void takeDamake (int damage) {
+	public void takeDamage (int damage) {
 		if (armor > damage) {
 			life--;
 		}
@@ -60,9 +60,9 @@ public class Champion {
 			return name + ": " + life + " de vida";
 		}
 		else {
+			life = 0;
 			return name + ": " + life + " de vida (morreu)";
 		}
 		
-	}
-	
+	}	
 }
